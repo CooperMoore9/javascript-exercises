@@ -1,7 +1,7 @@
 const removeFromArray = function(array, ...removedElement) {
     let arrayLength = array.length;
-    console.log(arrayLength)
-    for(i = arrayLength; i > 0; 1--){    
+
+    for(i = 0; i < arrayLength; i++){    
         for (const mainElement of array){
             for (const subElements of removedElement )
 
@@ -12,8 +12,9 @@ const removeFromArray = function(array, ...removedElement) {
             }
 
         }
-        return array;
+       
     }
+    return array;
 };
 
 // Do not edit below this line
