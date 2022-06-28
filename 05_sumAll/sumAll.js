@@ -11,15 +11,18 @@ const sumAll = function(num1, num2) {
         smallestNum = num1;
     }
 
-    for(i = smallestNum; i = biggestNum; i++){
+    if(Math.sign(num1) === -1 || Math.sign(num2) === -1 || typeof(num1) !== 'number' || typeof(num2) !== 'number'){
+        return 'ERROR';
+    }
 
-        console.log(smallestNum);
+    for(i = smallestNum; i <= biggestNum - 1; i++){
+
         tempNum = i + 1;
-        finalSum = smallestNum + tempNum;
+        smallestNum = smallestNum + tempNum
+        finalSum = smallestNum
         
     }
 
-    console.log(finalSum);
     return finalSum;
 
 };
